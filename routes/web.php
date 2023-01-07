@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,4 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('admin')->group(function () {
     // dashboard
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
+
+    // kategori
+    Route::resource('kategori', CategoryController::class);
 });

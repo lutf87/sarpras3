@@ -14,7 +14,8 @@
             </div>
             <div class="card-body">
                 <div class="row">
-                    <a href="#" class="btn btn-success mb-3"><strong>Tambah Kategori</strong></a>
+                    <a href="{{ route('kategori.create') }}" class="btn btn-success mb-3"><strong>Tambah
+                            Kategori</strong></a>
 
                     <table class="table table-striped table-bordered">
                         <thead>
@@ -37,7 +38,8 @@
                                         <div class="row">
                                             <a href="#" class="btn btn-primary btn-sm mx-1"><strong>Edit</strong></a>
                                             <form action="#" method="post">
-                                                <button type="submit" class="btn btn-danger btn-sm mx-1"><strong>Hapus</strong></button>
+                                                <button type="submit"
+                                                    class="btn btn-danger btn-sm mx-1"><strong>Hapus</strong></button>
                                             </form>
                                         </div>
                                     </td>
